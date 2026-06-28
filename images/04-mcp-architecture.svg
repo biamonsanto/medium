@@ -1,0 +1,61 @@
+<svg viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="860" height="480" fill="#0f1117" rx="16"/>
+  <text x="430" y="40" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">MCP — Claude Conectado ao Mundo Real</text>
+  <text x="430" y="62" text-anchor="middle" fill="#718096" font-size="12">Model Context Protocol: a API universal que transforma Claude num orquestrador</text>
+
+  <!-- Claude Core -->
+  <rect x="330" y="160" width="200" height="100" rx="14" fill="#1a1a2e" stroke="#b794f4" stroke-width="2"/>
+  <text x="430" y="198" text-anchor="middle" font-size="32">🤖</text>
+  <text x="430" y="224" text-anchor="middle" fill="#b794f4" font-size="14" font-weight="700">Claude Code</text>
+  <text x="430" y="242" text-anchor="middle" fill="#718096" font-size="11">Terminal / IDE</text>
+
+  <!-- GitHub -->
+  <rect x="40" y="90" width="150" height="70" rx="10" fill="#1a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="115" y="117" text-anchor="middle" font-size="24">🐙</text>
+  <text x="115" y="138" text-anchor="middle" fill="#4a9eff" font-size="12" font-weight="700">GitHub MCP</text>
+  <text x="115" y="153" text-anchor="middle" fill="#718096" font-size="10">PRs, Issues, Commits</text>
+  <line x1="190" y1="125" x2="330" y2="195" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Database -->
+  <rect x="40" y="200" width="150" height="70" rx="10" fill="#1a4a2e" stroke="#48bb78" stroke-width="1.5"/>
+  <text x="115" y="227" text-anchor="middle" font-size="24">🗄️</text>
+  <text x="115" y="248" text-anchor="middle" fill="#48bb78" font-size="12" font-weight="700">Database MCP</text>
+  <text x="115" y="263" text-anchor="middle" fill="#718096" font-size="10">PostgreSQL, MySQL, SQLite</text>
+  <line x1="190" y1="235" x2="330" y2="220" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Slack -->
+  <rect x="40" y="310" width="150" height="70" rx="10" fill="#3a2a1a" stroke="#ed8936" stroke-width="1.5"/>
+  <text x="115" y="337" text-anchor="middle" font-size="24">💬</text>
+  <text x="115" y="358" text-anchor="middle" fill="#ed8936" font-size="12" font-weight="700">Slack MCP</text>
+  <text x="115" y="373" text-anchor="middle" fill="#718096" font-size="10">Mensagens, Canais, Alertas</text>
+  <line x1="190" y1="345" x2="330" y2="245" stroke="#ed8936" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Browser -->
+  <rect x="670" y="90" width="150" height="70" rx="10" fill="#1a3a5c" stroke="#63b3ed" stroke-width="1.5"/>
+  <text x="745" y="117" text-anchor="middle" font-size="24">🌐</text>
+  <text x="745" y="138" text-anchor="middle" fill="#63b3ed" font-size="12" font-weight="700">Browser MCP</text>
+  <text x="745" y="153" text-anchor="middle" fill="#718096" font-size="10">Playwright, Puppeteer</text>
+  <line x1="670" y1="125" x2="530" y2="195" stroke="#63b3ed" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Linear -->
+  <rect x="670" y="200" width="150" height="70" rx="10" fill="#2a1a4a" stroke="#9f7aea" stroke-width="1.5"/>
+  <text x="745" y="227" text-anchor="middle" font-size="24">📋</text>
+  <text x="745" y="248" text-anchor="middle" fill="#9f7aea" font-size="12" font-weight="700">Linear MCP</text>
+  <text x="745" y="263" text-anchor="middle" fill="#718096" font-size="10">Tickets, Projetos, Sprints</text>
+  <line x1="670" y1="235" x2="530" y2="220" stroke="#9f7aea" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Custom -->
+  <rect x="670" y="310" width="150" height="70" rx="10" fill="#2a2a2a" stroke="#a0aec0" stroke-width="1.5"/>
+  <text x="745" y="337" text-anchor="middle" font-size="24">⚙️</text>
+  <text x="745" y="358" text-anchor="middle" fill="#a0aec0" font-size="12" font-weight="700">Seu MCP Custom</text>
+  <text x="745" y="373" text-anchor="middle" fill="#718096" font-size="10">Qualquer sistema interno</text>
+  <line x1="670" y1="345" x2="530" y2="245" stroke="#a0aec0" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Example workflow -->
+  <rect x="200" y="340" width="460" height="110" rx="10" fill="#16181f" stroke="#2d3748" stroke-width="1"/>
+  <text x="430" y="364" text-anchor="middle" fill="#fbd38d" font-size="12" font-weight="700">⚡ Exemplo: Issue → PR em 10 minutos</text>
+  <text x="220" y="386" fill="#4a9eff" font-size="11">①</text><text x="234" y="386" fill="#a0aec0" font-size="11">Lê issue #412 no GitHub MCP</text>
+  <text x="220" y="403" fill="#48bb78" font-size="11">②</text><text x="234" y="403" fill="#a0aec0" font-size="11">Consulta dados afetados no Database MCP</text>
+  <text x="220" y="420" fill="#b794f4" font-size="11">③</text><text x="234" y="420" fill="#a0aec0" font-size="11">Implementa a correção, roda os testes</text>
+  <text x="220" y="437" fill="#ed8936" font-size="11">④</text><text x="234" y="437" fill="#a0aec0" font-size="11">Abre PR no GitHub + posta no Slack #dev</text>
+</svg>
