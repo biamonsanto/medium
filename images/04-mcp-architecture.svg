@@ -4,15 +4,15 @@
   <text x="60" y="84" fill="#73726C" font-family="Arial, sans-serif" font-size="14">O protocolo que transforma o Claude em um orquestrador dos seus sistemas</text>
   <line x1="60" y1="100" x2="800" y2="100" stroke="#DAD6C9" stroke-width="1"/>
 
-  <!-- connectors (desenhados primeiro, ficam atrás dos cards e da caixa central) -->
-  <!-- esquerda: começam 10px após a borda direita do card (205) e terminam 10px antes da caixa (340) -->
-  <line x1="215" y1="161" x2="330" y2="210" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="215" y1="239" x2="330" y2="238" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="215" y1="317" x2="330" y2="266" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <!-- direita: começam 10px após a borda direita da caixa (520) e terminam 10px antes do card (655) -->
-  <line x1="530" y1="210" x2="645" y2="161" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="530" y1="238" x2="645" y2="239" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="530" y1="266" x2="645" y2="317" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <!-- connectors curvos (atrás dos cards e da caixa): saem na horizontal do card e entram na horizontal da caixa -->
+  <!-- esquerda: borda do card (205) -> borda da caixa (340) -->
+  <path d="M 205 161 C 272 161 273 207 340 207" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 205 239 C 272 239 273 238 340 238" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 205 317 C 272 317 273 269 340 269" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <!-- direita: borda da caixa (520) -> borda do card (655) -->
+  <path d="M 520 207 C 588 207 583 161 655 161" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 520 238 C 588 238 587 239 655 239" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 520 269 C 588 269 583 317 655 317" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
 
   <!-- Center: Claude -->
   <rect x="340" y="190" width="180" height="96" rx="16" fill="#CC785C"/>
