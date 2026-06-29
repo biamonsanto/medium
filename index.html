@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Do Terminal ao Deus da Máquina — Guia Definitivo do Claude Code 2026</title>
+<meta name="description" content="O guia completo dos 10 níveis de domínio do Claude Code, do terminal às routines autônomas. Com dados reais, exemplos de código e diagramas." />
+
+<!-- Open Graph / social preview -->
+<meta property="og:title" content="Do Terminal ao Deus da Máquina — Guia Definitivo do Claude Code 2026" />
+<meta property="og:description" content="Os 10 níveis de domínio do Claude Code, do terminal às routines autônomas." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://raw.githubusercontent.com/biamonsanto/medium/main/images/01-10-levels.svg" />
+
+<!-- Markdown renderer + syntax highlighting -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+<style>
+  :root {
+    --bg:        #F0EEE6;  /* ivory / cream */
+    --surface:   #FAF9F5;  /* lighter card */
+    --surface-2: #EDE7DB;  /* warm tan */
+    --ink:       #1F1E1D;  /* near-black */
+    --body:      #3D3C39;  /* dark warm gray */
+    --muted:     #73726C;  /* muted */
+    --clay:      #CC785C;  /* Claude clay/coral */
+    --clay-dk:   #AB5A38;  /* darker clay */
+    --border:    #DAD6C9;  /* warm border */
+    --code-bg:   #2B2A27;  /* dark code panel */
+    --code-fg:   #E8E4D8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* reading progress bar */
+  #progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: var(--clay); z-index: 100; transition: width .1s linear;
+  }
+
+  /* top bar */
+  header.topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(240,238,230,.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 24px;
+    font-size: 14px; color: var(--muted);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  header.topbar .brand { color: var(--ink); font-weight: 600; }
+  header.topbar a { color: var(--clay); text-decoration: none; }
+  header.topbar a:hover { text-decoration: underline; }
+
+  main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 56px 24px 120px;
+  }
+
+  /* loading state */
+  #loading { color: var(--muted); text-align: center; padding: 80px 0; }
+
+  /* typography */
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Times New Roman", "Tiempos", serif;
+    color: var(--ink);
+    line-height: 1.25;
+    font-weight: 400;
+  }
+  h1 { font-size: 2.6rem; margin: .2em 0 .5em; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.9rem; margin: 2.4em 0 .6em;
+    padding-bottom: .3em; border-bottom: 1px solid var(--border);
+  }
+  h3 { font-size: 1.35rem; margin: 1.8em 0 .5em; color: var(--clay-dk); }
+  h4 { font-size: 1.1rem; margin: 1.4em 0 .4em; }
+
+  p { margin: 1.1em 0; }
+
+  a { color: var(--clay); text-decoration: none; border-bottom: 1px solid rgba(204,120,92,.35); }
+  a:hover { border-bottom-color: var(--clay); }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  /* blockquote */
+  blockquote {
+    margin: 1.8em 0; padding: 4px 0 4px 24px;
+    border-left: 3px solid var(--clay);
+    color: var(--ink); font-style: italic; font-size: 1.15em;
+  }
+  blockquote p { margin: .4em 0; }
+
+  /* horizontal rule */
+  hr { border: none; border-top: 1px solid var(--border); margin: 3em 0; }
+
+  /* images */
+  img {
+    max-width: 100%; height: auto; display: block;
+    margin: 2em auto; border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(40,38,33,.08);
+  }
+
+  /* inline code */
+  code {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: .88em;
+    background: var(--surface-2);
+    color: var(--clay-dk);
+    padding: .15em .4em; border-radius: 5px;
+  }
+
+  /* code blocks */
+  pre {
+    background: var(--code-bg);
+    border-radius: 12px;
+    padding: 20px 22px;
+    overflow-x: auto;
+    margin: 1.6em 0;
+    box-shadow: 0 4px 24px rgba(40,38,33,.10);
+  }
+  pre code {
+    background: none; color: var(--code-fg);
+    padding: 0; font-size: .82rem; line-height: 1.6;
+  }
+
+  /* tables */
+  table {
+    width: 100%; border-collapse: collapse; margin: 1.8em 0;
+    font-size: .92rem;
+  }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  th { background: var(--surface-2); color: var(--ink); font-weight: 600; }
+  tr:hover td { background: var(--surface); }
+
+  /* lists */
+  ul, ol { padding-left: 1.4em; }
+  li { margin: .4em 0; }
+
+  /* footer */
+  footer.pagefoot {
+    max-width: 740px; margin: 0 auto; padding: 40px 24px 80px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px; text-align: center;
+  }
+
+  /* highlight.js token colors tuned to the warm dark panel */
+  .hljs-keyword, .hljs-selector-tag, .hljs-built_in { color: #E0996F; }
+  .hljs-string, .hljs-attr { color: #A3B58A; }
+  .hljs-number, .hljs-literal { color: #D9A86C; }
+  .hljs-comment { color: #8C8A82; font-style: italic; }
+  .hljs-title, .hljs-section, .hljs-name { color: #E8C9A0; }
+  .hljs-attribute, .hljs-variable { color: #D9D6CC; }
+
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    main { padding: 32px 18px 80px; }
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="topbar">
+  <span class="brand">Claude Code · Guia 2026</span>
+  <span><a href="https://github.com/biamonsanto/medium" target="_blank" rel="noopener">Ver no GitHub →</a></span>
+</header>
+
+<main>
+  <div id="loading">Carregando o artigo…</div>
+  <article id="content"></article>
+</main>
+
+<footer class="pagefoot">
+  Escrito com Claude Code · Publicado em 2026 ·
+  <a href="https://github.com/biamonsanto/medium">github.com/biamonsanto/medium</a>
+</footer>
+
+<script>
+  // Render the markdown source as the page body.
+  marked.setOptions({
+    gfm: true,
+    breaks: false,
+    highlight: function (code, lang) {
+      try {
+        if (lang && hljs.getLanguage(lang)) {
+          return hljs.highlight(code, { language: lang }).value;
+        }
+        return hljs.highlightAuto(code).value;
+      } catch (e) { return code; }
+    }
+  });
+
+  fetch('artigo_claude_code.md')
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    })
+    .then(function (md) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('content').innerHTML = marked.parse(md);
+      document.querySelectorAll('pre code').forEach(function (b) {
+        try { hljs.highlightElement(b); } catch (e) {}
+      });
+      document.title = (document.querySelector('h1')?.textContent || document.title);
+    })
+    .catch(function (err) {
+      document.getElementById('loading').innerHTML =
+        'Não foi possível carregar o artigo (' + err.message + ').<br>' +
+        'Abra <a href="artigo_claude_code.md">o arquivo markdown</a> diretamente.';
+    });
+
+  // reading progress
+  window.addEventListener('scroll', function () {
+    var h = document.documentElement;
+    var scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    document.getElementById('progress').style.width = scrolled + '%';
+  });
+</script>
+</body>
+</html>
