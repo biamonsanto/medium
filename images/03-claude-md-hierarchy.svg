@@ -1,62 +1,54 @@
-<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect width="800" height="460" fill="#0f1117" rx="16"/>
-  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">CLAUDE.md — Os 4 Níveis de Memória</text>
-  <text x="400" y="62" text-anchor="middle" fill="#718096" font-size="12">Cada nível é carregado automaticamente no escopo certo</text>
+<svg viewBox="0 0 860 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="500" fill="#F0EEE6"/>
+  <text x="60" y="58" fill="#1F1E1D" font-family="Georgia, serif" font-size="27">CLAUDE.md — os 4 níveis de memória</text>
+  <text x="60" y="84" fill="#73726C" font-family="Arial, sans-serif" font-size="14">Cada nível é carregado automaticamente no escopo certo</text>
+  <line x1="60" y1="100" x2="800" y2="100" stroke="#DAD6C9" stroke-width="1"/>
 
   <!-- Level 1: Global -->
-  <rect x="280" y="85" width="240" height="60" rx="10" fill="#1a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="400" y="108" text-anchor="middle" fill="#4a9eff" font-size="12" font-weight="700">🌍 GLOBAL  ~/.claude/CLAUDE.md</text>
-  <text x="400" y="126" text-anchor="middle" fill="#a0aec0" font-size="11">Suas preferências pessoais — vale em TODOS os projetos</text>
-  <text x="400" y="141" text-anchor="middle" fill="#718096" font-size="10">ex: "prefiro código conciso", "use português nos comentários"</text>
+  <rect x="270" y="120" width="320" height="64" rx="12" fill="#FAF9F5" stroke="#CC785C" stroke-width="1.5"/>
+  <text x="430" y="146" text-anchor="middle" fill="#CC785C" font-family="Arial, sans-serif" font-size="13" font-weight="700">🌍 GLOBAL · ~/.claude/CLAUDE.md</text>
+  <text x="430" y="166" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="12">Suas preferências pessoais — valem em todos os projetos</text>
+  <text x="430" y="180" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">ex.: "prefiro código conciso", "use português nos comentários"</text>
 
-  <!-- Arrow down -->
-  <line x1="400" y1="145" x2="400" y2="168" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#a1)"/>
+  <line x1="430" y1="184" x2="430" y2="206" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#m)"/>
 
-  <!-- Level 2: Project root -->
-  <rect x="200" y="170" width="400" height="60" rx="10" fill="#1a4a2e" stroke="#48bb78" stroke-width="1.5"/>
-  <text x="400" y="193" text-anchor="middle" fill="#48bb78" font-size="12" font-weight="700">📁 PROJETO  ./CLAUDE.md</text>
-  <text x="400" y="211" text-anchor="middle" fill="#a0aec0" font-size="11">Regras deste projeto — stack, padrões, arquitetura, o que não mexer</text>
-  <text x="400" y="226" text-anchor="middle" fill="#718096" font-size="10">ex: "nunca use any em TypeScript", "lógica de negócio em /lib/services"</text>
+  <!-- Level 2: Project -->
+  <rect x="200" y="208" width="460" height="64" rx="12" fill="#FAF9F5" stroke="#AB5A38" stroke-width="1.5"/>
+  <text x="430" y="234" text-anchor="middle" fill="#AB5A38" font-family="Arial, sans-serif" font-size="13" font-weight="700">📁 PROJETO · ./CLAUDE.md</text>
+  <text x="430" y="254" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="12">Regras deste projeto — stack, padrões, arquitetura, o que não mexer</text>
+  <text x="430" y="268" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">ex.: "nunca use any em TypeScript", "lógica de negócio em /lib/services"</text>
 
-  <!-- Arrow down left -->
-  <line x1="300" y1="230" x2="220" y2="258" stroke="#48bb78" stroke-width="1.5" marker-end="url(#a2)"/>
-  <!-- Arrow down right -->
-  <line x1="500" y1="230" x2="580" y2="258" stroke="#48bb78" stroke-width="1.5" marker-end="url(#a2)"/>
+  <line x1="320" y1="272" x2="230" y2="298" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#m)"/>
+  <line x1="540" y1="272" x2="630" y2="298" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#m)"/>
 
-  <!-- Level 3: Subfolders -->
-  <rect x="60" y="260" width="300" height="60" rx="10" fill="#3a1a4a" stroke="#b794f4" stroke-width="1.5"/>
-  <text x="210" y="283" text-anchor="middle" fill="#b794f4" font-size="12" font-weight="700">📂 PASTA  ./frontend/CLAUDE.md</text>
-  <text x="210" y="301" text-anchor="middle" fill="#a0aec0" font-size="11">Regras específicas desta pasta/módulo</text>
-  <text x="210" y="316" text-anchor="middle" fill="#718096" font-size="10">ex: "componentes usam shadcn/ui", "sem class components"</text>
+  <!-- Level 3: Folders -->
+  <rect x="70" y="300" width="300" height="64" rx="12" fill="#FAF9F5" stroke="#94492E" stroke-width="1.5"/>
+  <text x="220" y="326" text-anchor="middle" fill="#94492E" font-family="Arial, sans-serif" font-size="13" font-weight="700">📂 PASTA · ./frontend/CLAUDE.md</text>
+  <text x="220" y="346" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="12">Regras específicas desta pasta</text>
+  <text x="220" y="360" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">ex.: "componentes usam shadcn/ui"</text>
 
-  <rect x="440" y="260" width="300" height="60" rx="10" fill="#3a1a4a" stroke="#b794f4" stroke-width="1.5"/>
-  <text x="590" y="283" text-anchor="middle" fill="#b794f4" font-size="12" font-weight="700">📂 PASTA  ./backend/CLAUDE.md</text>
-  <text x="590" y="301" text-anchor="middle" fill="#a0aec0" font-size="11">Regras específicas desta pasta/módulo</text>
-  <text x="590" y="316" text-anchor="middle" fill="#718096" font-size="10">ex: "queries sempre com Prisma", "retry em transações"</text>
+  <rect x="490" y="300" width="300" height="64" rx="12" fill="#FAF9F5" stroke="#94492E" stroke-width="1.5"/>
+  <text x="640" y="326" text-anchor="middle" fill="#94492E" font-family="Arial, sans-serif" font-size="13" font-weight="700">📂 PASTA · ./backend/CLAUDE.md</text>
+  <text x="640" y="346" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="12">Regras específicas desta pasta</text>
+  <text x="640" y="360" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">ex.: "queries sempre com Prisma"</text>
 
-  <!-- Arrow down left 2 -->
-  <line x1="210" y1="320" x2="210" y2="348" stroke="#b794f4" stroke-width="1.5" marker-end="url(#a3)"/>
-  <!-- Arrow down right 2 -->
-  <line x1="590" y1="320" x2="590" y2="348" stroke="#b794f4" stroke-width="1.5" marker-end="url(#a3)"/>
+  <line x1="220" y1="364" x2="220" y2="386" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#m)"/>
+  <line x1="640" y1="364" x2="640" y2="386" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#m)"/>
 
-  <!-- Level 4: Session memory -->
-  <rect x="100" y="350" width="220" height="54" rx="10" fill="#4a2a1a" stroke="#ed8936" stroke-width="1.5"/>
-  <text x="210" y="373" text-anchor="middle" fill="#ed8936" font-size="12" font-weight="700">💾 /memory (Sessão)</text>
-  <text x="210" y="391" text-anchor="middle" fill="#a0aec0" font-size="11">Notas da sessão atual que persistem</text>
-  <text x="210" y="405" text-anchor="middle" fill="#718096" font-size="10">Use: decisões de arquitetura do dia</text>
+  <!-- Level 4: Session -->
+  <rect x="110" y="388" width="220" height="56" rx="12" fill="#EDE7DB" stroke="#B98E5E" stroke-width="1.5"/>
+  <text x="220" y="412" text-anchor="middle" fill="#8C6638" font-family="Arial, sans-serif" font-size="13" font-weight="700">💾 /memory (sessão)</text>
+  <text x="220" y="431" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Decisões do dia que persistem</text>
 
-  <rect x="480" y="350" width="220" height="54" rx="10" fill="#4a2a1a" stroke="#ed8936" stroke-width="1.5"/>
-  <text x="590" y="373" text-anchor="middle" fill="#ed8936" font-size="12" font-weight="700">💾 /memory (Sessão)</text>
-  <text x="590" y="391" text-anchor="middle" fill="#a0aec0" font-size="11">Notas da sessão atual que persistem</text>
-  <text x="590" y="405" text-anchor="middle" fill="#718096" font-size="10">Use: bugs encontrados, contexto do PR</text>
+  <rect x="530" y="388" width="220" height="56" rx="12" fill="#EDE7DB" stroke="#B98E5E" stroke-width="1.5"/>
+  <text x="640" y="412" text-anchor="middle" fill="#8C6638" font-family="Arial, sans-serif" font-size="13" font-weight="700">💾 /memory (sessão)</text>
+  <text x="640" y="431" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Contexto de bugs e PRs</text>
 
-  <!-- Key insight box -->
-  <rect x="60" y="416" width="680" height="30" rx="8" fill="#1a2a1a"/>
-  <text x="400" y="436" text-anchor="middle" fill="#48bb78" font-size="12">💡 Tudo no CLAUDE.md SOBREVIVE à compactação de contexto. O que está só na conversa, não.</text>
+  <!-- Insight -->
+  <rect x="60" y="460" width="740" height="30" rx="8" fill="#2B2A27"/>
+  <text x="430" y="480" text-anchor="middle" fill="#E8E4D8" font-family="Arial, sans-serif" font-size="12.5">Tudo no CLAUDE.md sobrevive à compactação de contexto. O que está só na conversa, não.</text>
 
   <defs>
-    <marker id="a1" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4a9eff"/></marker>
-    <marker id="a2" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#48bb78"/></marker>
-    <marker id="a3" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#b794f4"/></marker>
+    <marker id="m" markerWidth="9" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C9A98E"/></marker>
   </defs>
 </svg>

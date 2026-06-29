@@ -1,69 +1,65 @@
-<svg viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect width="860" height="480" fill="#0f1117" rx="16"/>
-  <text x="430" y="40" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Subagents — Times de IA Trabalhando em Paralelo</text>
-  <text x="430" y="62" text-anchor="middle" fill="#718096" font-size="12">Cada subagent tem seu próprio contexto limpo — sem viés, sem interferência</text>
+<svg viewBox="0 0 860 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="500" fill="#F0EEE6"/>
+  <text x="60" y="58" fill="#1F1E1D" font-family="Georgia, serif" font-size="27">Subagentes — times de IA em paralelo</text>
+  <text x="60" y="84" fill="#73726C" font-family="Arial, sans-serif" font-size="14">Cada subagente tem seu próprio contexto limpo: sem viés, sem interferência</text>
+  <line x1="60" y1="100" x2="800" y2="100" stroke="#DAD6C9" stroke-width="1"/>
 
   <!-- Main agent -->
-  <rect x="300" y="88" width="260" height="70" rx="12" fill="#1a1a2e" stroke="#b794f4" stroke-width="2"/>
-  <text x="430" y="114" text-anchor="middle" fill="#b794f4" font-size="13" font-weight="700">🧠 Agente Principal</text>
-  <text x="430" y="132" text-anchor="middle" fill="#a0aec0" font-size="11">Planeja, distribui e integra</text>
-  <text x="430" y="148" text-anchor="middle" fill="#718096" font-size="10">"Modernize o módulo de autenticação"</text>
+  <rect x="300" y="120" width="260" height="64" rx="14" fill="#CC785C"/>
+  <text x="430" y="146" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="15">Agente Principal</text>
+  <text x="430" y="166" text-anchor="middle" fill="#F3DCCF" font-family="Arial, sans-serif" font-size="11.5">Planeja, distribui e integra</text>
 
-  <!-- Arrows down to subagents -->
-  <line x1="340" y1="158" x2="160" y2="220" stroke="#b794f4" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#sArr)"/>
-  <line x1="390" y1="158" x2="340" y2="220" stroke="#b794f4" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#sArr)"/>
-  <line x1="470" y1="158" x2="520" y2="220" stroke="#b794f4" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#sArr)"/>
-  <line x1="520" y1="158" x2="700" y2="220" stroke="#b794f4" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#sArr)"/>
+  <line x1="350" y1="184" x2="160" y2="222" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#d)"/>
+  <line x1="395" y1="184" x2="350" y2="222" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#d)"/>
+  <line x1="465" y1="184" x2="510" y2="222" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#d)"/>
+  <line x1="510" y1="184" x2="700" y2="222" stroke="#C9A98E" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#d)"/>
 
-  <!-- Subagent A: Analysis -->
-  <rect x="60" y="222" width="180" height="80" rx="10" fill="#1a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="150" y="246" text-anchor="middle" fill="#4a9eff" font-size="12" font-weight="700">🔍 Análise</text>
-  <text x="150" y="264" text-anchor="middle" fill="#a0aec0" font-size="10">Mapeia dependências</text>
-  <text x="150" y="280" text-anchor="middle" fill="#a0aec0" font-size="10">e impacto da mudança</text>
-  <text x="150" y="296" text-anchor="middle" fill="#718096" font-size="10">Contexto isolado ✓</text>
+  <!-- Subagents -->
+  <rect x="60" y="224" width="180" height="86" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="60" y="224" width="6" height="86" rx="3" fill="#CC785C"/>
+  <text x="155" y="250" text-anchor="middle" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">🔍 Análise</text>
+  <text x="155" y="270" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">Mapeia dependências</text>
+  <text x="155" y="286" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">e impacto da mudança</text>
+  <text x="155" y="303" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10">contexto isolado</text>
 
-  <!-- Subagent B: Implementation -->
-  <rect x="260" y="222" width="180" height="80" rx="10" fill="#1a4a2e" stroke="#48bb78" stroke-width="1.5"/>
-  <text x="350" y="246" text-anchor="middle" fill="#48bb78" font-size="12" font-weight="700">⚙️ Implementação</text>
-  <text x="350" y="264" text-anchor="middle" fill="#a0aec0" font-size="10">JWT refresh tokens</text>
-  <text x="350" y="280" text-anchor="middle" fill="#a0aec0" font-size="10">+ rate limiting</text>
-  <text x="350" y="296" text-anchor="middle" fill="#718096" font-size="10">Contexto isolado ✓</text>
+  <rect x="260" y="224" width="180" height="86" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="260" y="224" width="6" height="86" rx="3" fill="#AB5A38"/>
+  <text x="355" y="250" text-anchor="middle" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">⚙️ Implementação</text>
+  <text x="355" y="270" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">JWT refresh tokens</text>
+  <text x="355" y="286" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">+ rate limiting</text>
+  <text x="355" y="303" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10">contexto isolado</text>
 
-  <!-- Subagent C: Tests -->
-  <rect x="460" y="222" width="180" height="80" rx="10" fill="#3a1a4a" stroke="#9f7aea" stroke-width="1.5"/>
-  <text x="550" y="246" text-anchor="middle" fill="#9f7aea" font-size="12" font-weight="700">🧪 Testes</text>
-  <text x="550" y="264" text-anchor="middle" fill="#a0aec0" font-size="10">Escreve unit tests</text>
-  <text x="550" y="280" text-anchor="middle" fill="#a0aec0" font-size="10">+ integration tests</text>
-  <text x="550" y="296" text-anchor="middle" fill="#718096" font-size="10">Contexto isolado ✓</text>
+  <rect x="460" y="224" width="180" height="86" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="460" y="224" width="6" height="86" rx="3" fill="#788C5D"/>
+  <text x="555" y="250" text-anchor="middle" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">🧪 Testes</text>
+  <text x="555" y="270" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">Unit + integration</text>
+  <text x="555" y="286" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">tests da mudança</text>
+  <text x="555" y="303" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10">contexto isolado</text>
 
-  <!-- Subagent D: Review -->
-  <rect x="660" y="222" width="160" height="80" rx="10" fill="#4a2a1a" stroke="#ed8936" stroke-width="1.5"/>
-  <text x="740" y="246" text-anchor="middle" fill="#ed8936" font-size="12" font-weight="700">👁️ Review</text>
-  <text x="740" y="264" text-anchor="middle" fill="#a0aec0" font-size="10">Code review com</text>
-  <text x="740" y="280" text-anchor="middle" fill="#a0aec0" font-size="10">zero viés</text>
-  <text x="740" y="296" text-anchor="middle" fill="#718096" font-size="10">Contexto isolado ✓</text>
+  <rect x="660" y="224" width="140" height="86" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="660" y="224" width="6" height="86" rx="3" fill="#B98E5E"/>
+  <text x="733" y="250" text-anchor="middle" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">👁️ Review</text>
+  <text x="733" y="270" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">Code review</text>
+  <text x="733" y="286" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11">com zero viés</text>
+  <text x="733" y="303" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10">contexto isolado</text>
 
-  <!-- Parallel execution label -->
-  <rect x="60" y="316" width="760" height="24" rx="6" fill="#1a1a1a" stroke="#2d3748" stroke-width="1"/>
-  <text x="430" y="332" text-anchor="middle" fill="#fbd38d" font-size="11">⚡ Todos executam em paralelo — ao mesmo tempo, cada um no seu contexto limpo</text>
+  <!-- Parallel band -->
+  <rect x="60" y="326" width="740" height="26" rx="8" fill="#EDE7DB"/>
+  <text x="430" y="343" text-anchor="middle" fill="#8C6638" font-family="Arial, sans-serif" font-size="12">Todos executam em paralelo — ao mesmo tempo, cada um no seu contexto limpo</text>
 
-  <!-- Arrows up back to main -->
-  <line x1="150" y1="356" x2="340" y2="390" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#sArrB)"/>
-  <line x1="350" y1="356" x2="390" y2="390" stroke="#48bb78" stroke-width="1.5" marker-end="url(#sArrG)"/>
-  <line x1="550" y1="356" x2="470" y2="390" stroke="#9f7aea" stroke-width="1.5" marker-end="url(#sArrP)"/>
-  <line x1="740" y1="356" x2="520" y2="390" stroke="#ed8936" stroke-width="1.5" marker-end="url(#sArrO)"/>
+  <!-- back arrows -->
+  <line x1="155" y1="364" x2="350" y2="396" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#d)"/>
+  <line x1="355" y1="364" x2="395" y2="396" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#d)"/>
+  <line x1="555" y1="364" x2="465" y2="396" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#d)"/>
+  <line x1="733" y1="364" x2="510" y2="396" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#d)"/>
 
-  <!-- Merge box -->
-  <rect x="270" y="392" width="320" height="60" rx="10" fill="#1a1a2e" stroke="#b794f4" stroke-width="2"/>
-  <text x="430" y="415" text-anchor="middle" fill="#b794f4" font-size="12" font-weight="700">🧠 Agente Principal Integra</text>
-  <text x="430" y="433" text-anchor="middle" fill="#a0aec0" font-size="11">Combina resultados → resolve conflitos → abre PR final</text>
-  <text x="430" y="448" text-anchor="middle" fill="#718096" font-size="10">Tempo total: ~15 min | Sem subagents: 3-4 horas</text>
+  <!-- Merge -->
+  <rect x="270" y="398" width="320" height="72" rx="14" fill="#2B2A27"/>
+  <text x="430" y="424" text-anchor="middle" fill="#E0996F" font-family="Georgia, serif" font-size="15">Agente Principal integra</text>
+  <text x="430" y="444" text-anchor="middle" fill="#D9D6CC" font-family="Arial, sans-serif" font-size="11.5">Combina resultados → resolve conflitos → abre o PR final</text>
+  <text x="430" y="461" text-anchor="middle" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Tempo total: ~15 min · Sem subagentes: 3–4 horas</text>
 
   <defs>
-    <marker id="sArr" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#b794f4"/></marker>
-    <marker id="sArrB" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4a9eff"/></marker>
-    <marker id="sArrG" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#48bb78"/></marker>
-    <marker id="sArrP" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#9f7aea"/></marker>
-    <marker id="sArrO" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#ed8936"/></marker>
+    <marker id="d" markerWidth="9" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C9A98E"/></marker>
   </defs>
 </svg>

@@ -5,11 +5,11 @@
 
 ---
 
-Você provavelmente já ouviu falar do Claude Code. Talvez já tenha instalado. Talvez use para corrigir um bug aqui, gerar um componente ali.
+Você provavelmente já ouviu falar do Claude Code. Talvez já o tenha instalado. Talvez o use para corrigir um bug aqui, gerar um componente ali.
 
-Mas se você está usando Claude Code apenas para isso, você está usando 10% da ferramenta.
+Mas, se você está usando o Claude Code apenas para isso, está usando 10% da ferramenta.
 
-Este artigo existe para mostrar os outros 90%. Do básico absoluto até o nível onde Claude trabalha enquanto você dorme — sem seu computador ligado.
+Este artigo existe para mostrar os outros 90%. Do básico absoluto até o nível em que o Claude trabalha enquanto você dorme — sem o seu computador ligado.
 
 São 10 níveis. Cada um multiplica o anterior.
 
@@ -50,13 +50,13 @@ Pronto. Você está dentro. Mas o que acontece agora?
 
 ## O que Claude Code realmente faz por baixo dos panos
 
-Quando você manda uma mensagem, Claude não só "responde". Ele entra num loop agêntico:
+Quando você manda uma mensagem, o Claude não apenas "responde". Ele entra em um loop agêntico:
 
 ![O Loop Agêntico do Claude Code](https://raw.githubusercontent.com/biamonsanto/medium/main/images/02-agentic-loop.svg)
 
-Observe o diagrama. Claude **pensa → age → observa → decide se terminou → repete**. Ele pode ler 20 arquivos, rodar 5 comandos, e editar 3 funções antes de te dar uma resposta final. Tudo isso automaticamente.
+Observe o diagrama. O Claude **pensa → age → observa → decide se terminou → repete**. Ele pode ler 20 arquivos, rodar 5 comandos e editar 3 funções antes de dar a você uma resposta final. Tudo isso automaticamente.
 
-É diferente de um chatbot. Claude é um agente.
+É diferente de um chatbot. O Claude é um agente.
 
 ## Como aproveitar o Nível 1 de verdade
 
@@ -69,10 +69,10 @@ Observe o diagrama. Claude **pensa → age → observa → decide se terminou �
 ```
 "O endpoint POST /api/auth/login em src/api/auth.ts está retornando 
 401 intermitente. O problema parece estar na validação do token JWT. 
-Leia o arquivo, identifique o bug, e corrija."
+Leia o arquivo, identifique o bug e corrija."
 ```
 
-A diferença? Especificidade. Claude é um desenvolvedor sênior — ele precisa de contexto, não de ordens vagas.
+A diferença? Especificidade. O Claude é um desenvolvedor sênior — ele precisa de contexto, não de ordens vagas.
 
 **O que Claude enxerga automaticamente:**
 - Toda a estrutura de pastas do projeto
@@ -91,7 +91,7 @@ mudou no projeto recentemente. Depois, identifique qual arquivo
 tem o maior número de TODOs pendentes.
 ```
 
-Observe Claude ler o git log, varrer os arquivos, e te dar uma análise real. Isso já é diferente de qualquer copiloto que você usou antes.
+Observe o Claude ler o git log, varrer os arquivos e dar a você uma análise real. Isso já é diferente de qualquer copiloto que você usou antes.
 
 ---
 
@@ -99,7 +99,7 @@ Observe Claude ler o git log, varrer os arquivos, e te dar uma análise real. Is
 
 ## O problema que a memória resolve
 
-Sem memória, toda sessão começa do zero. Claude não sabe que você usa TypeScript strict, que não quer comentários em inglês, que a pasta `/lib/auth` é crítica e não deve ser mexida.
+Sem memória, toda sessão começa do zero. O Claude não sabe que você usa TypeScript strict, que não quer comentários em inglês, nem que a pasta `/lib/auth` é crítica e não deve ser mexida.
 
 Você repete essas instruções toda vez. Isso é desperdício.
 
@@ -117,7 +117,7 @@ São 4 locais, cada um com escopo diferente. Do mais amplo ao mais específico:
 
 - Prefiro código conciso sobre verbose
 - Sempre use português nos comentários
-- Explique decisões de arquitetura não-óbvias
+- Explique decisões de arquitetura não óbvias
 - Prefiro `const` sobre `let` quando possível
 ```
 
@@ -165,13 +165,13 @@ Abre seu editor. Você adiciona:
 Migrando o módulo de pagamentos de Stripe v3 para v4. 
 A mudança é breaking em webhooks — checar /lib/webhooks/ com cuidado.
 ```
-Na próxima sessão, Claude lembra.
+Na próxima sessão, o Claude lembra.
 
 ## A regra mais importante da memória
 
 > **Se algo é importante para o projeto, coloca no CLAUDE.md. Não confie na memória da conversa.**
 
-Quando o contexto fica grande, Claude compacta automaticamente a conversa. O que está no CLAUDE.md **sobrevive** à compactação. O que está só no chat, não.
+Quando o contexto fica grande, o Claude compacta automaticamente a conversa. O que está no CLAUDE.md **sobrevive** à compactação. O que está só no chat, não.
 
 ## Exercício do Nível 2
 
@@ -180,7 +180,7 @@ claude
 /init
 ```
 
-O `/init` analisa seu projeto e gera um CLAUDE.md inicial. Revise, adicione suas regras reais, e salve. A partir daí, toda sessão começa com Claude já sabendo as regras do seu jogo.
+O `/init` analisa seu projeto e gera um CLAUDE.md inicial. Revise, adicione suas regras reais e salve. A partir daí, toda sessão começa com o Claude já sabendo as regras do seu jogo.
 
 ---
 
@@ -202,7 +202,7 @@ Slash commands são atalhos que você digita diretamente na sessão. Começam co
 | `/memory` | Abre seus arquivos de memória | Adicionar decisões importantes |
 | `/init` | Gera CLAUDE.md analisando o projeto | Setup inicial |
 
-**Dica real:** Use `/plan` antes de qualquer refactoring grande. Claude vai listar o que pretende fazer — você aprova ou ajusta antes que ele mexa em qualquer arquivo.
+**Dica real:** Use `/plan` antes de qualquer refactoring grande. O Claude vai listar o que pretende fazer — você aprova ou ajusta antes que ele mexa em qualquer arquivo.
 
 ```
 /plan
@@ -210,7 +210,7 @@ Preciso migrar o sistema de auth de JWT stateless para
 JWT + refresh tokens com Redis. Qual seria o plano?
 ```
 
-Claude vai responder com um plano detalhado, pedir sua aprovação, e só então executar. Isso evita surpresas em código crítico.
+O Claude vai responder com um plano detalhado, pedir sua aprovação e só então executar. Isso evita surpresas em código crítico.
 
 ## Criando seus próprios slash commands
 
@@ -274,7 +274,7 @@ A Anthropic atualizou o padrão. Em vez de `.claude/commands/`, use `.claude/ski
     severity-matrix.json   ← pode ter arquivos de suporte
 ```
 
-A grande vantagem: Claude pode invocar skills **autonomamente** quando a tarefa bate com a descrição — sem você precisar chamar manualmente.
+A grande vantagem: o Claude pode invocar skills **autonomamente** quando a tarefa corresponde à descrição — sem que você precise chamá-las manualmente.
 
 ---
 
@@ -310,9 +310,9 @@ A grande vantagem: Claude pode invocar skills **autonomamente** quando a tarefa 
 
 ## Por que permissões explícitas importam
 
-Sem o `deny` de `rm -rf`, Claude tecnicamente poderia executar isso se entendesse que é necessário para a tarefa. Com o deny, é impossível — nem que você peça.
+Sem o `deny` de `rm -rf`, o Claude tecnicamente poderia executar esse comando se entendesse que é necessário para a tarefa. Com o deny, é impossível — nem que você peça.
 
-Pense nas permissões como um contrato: "Claude pode fazer A, B, C. Claude **nunca** faz X, Y, Z."
+Pense nas permissões como um contrato: "O Claude pode fazer A, B, C. O Claude **nunca** faz X, Y, Z."
 
 ## Escolhendo o modelo certo
 
@@ -335,7 +335,7 @@ Pense nas permissões como um contrato: "Claude pode fazer A, B, C. Claude **nun
 }
 ```
 
-Claude usa essas variáveis. Mas veja o que está no `deny`:
+O Claude usa essas variáveis. Mas veja o que está no `deny`:
 ```json
 "deny": ["Read(.env.production)", "Write(.env*)"]
 ```
@@ -348,7 +348,7 @@ Claude nunca lê seu `.env.production` e nunca escreve em arquivos `.env`. Crede
 
 ## Skills vs. Comandos simples
 
-Um comando simples é um prompt. Uma Skill é um workflow com contexto, arquivos de suporte, e detecção automática.
+Um comando simples é um prompt. Uma Skill é um workflow com contexto, arquivos de suporte e detecção automática.
 
 ```
 .claude/skills/pr-review/
@@ -412,7 +412,7 @@ Para cada problema:
 }
 ```
 
-Quando você digita `/pr-review`, Claude carrega o workflow **e** os arquivos de suporte — o review usa seus critérios reais, não critérios genéricos.
+Quando você digita `/pr-review`, o Claude carrega o workflow **e** os arquivos de suporte — o review usa seus critérios reais, não critérios genéricos.
 
 ## Skills de onboarding
 
@@ -457,10 +457,10 @@ Todo dev novo do time faz `/new-feature` e segue o mesmo fluxo. Sem surpresas, s
 
 ## O que é MCP
 
-MCP (Model Context Protocol) é o protocolo aberto que permite que Claude se conecte a sistemas externos: GitHub, bancos de dados, Slack, Linear, browsers, deploys — qualquer coisa.
+MCP (Model Context Protocol) é o protocolo aberto que permite que o Claude se conecte a sistemas externos: GitHub, bancos de dados, Slack, Linear, browsers, deploys — qualquer coisa.
 
-Sem MCP: Claude vive dentro do terminal, isolado do mundo.
-Com MCP: Claude é um orquestrador que controla seus sistemas.
+Sem MCP: o Claude vive dentro do terminal, isolado do mundo.
+Com MCP: o Claude é um orquestrador que controla seus sistemas.
 
 ![Arquitetura MCP — Claude Conectado ao Mundo](https://raw.githubusercontent.com/biamonsanto/medium/main/images/04-mcp-architecture.svg)
 
@@ -494,10 +494,10 @@ Reinicie o Claude Code. Agora você pode:
 ```
 Leia a issue #412 no GitHub, entenda o problema, 
 consulte os dados afetados no banco, implemente a 
-correção, e abra um PR com uma descrição completa.
+correção e abra um PR com uma descrição completa.
 ```
 
-Claude faz tudo isso. Sem copiar e colar entre janelas.
+O Claude faz tudo isso, sem você precisar copiar e colar entre janelas.
 
 ## Os MCPs mais úteis em 2026
 
@@ -522,7 +522,7 @@ Gere 500 usuários realistas para o banco de dev com dados brasileiros
 **Browser/Playwright MCP** — testes visuais:
 ```
 Abra a aplicação em localhost:3000, faça login com 
-test@example.com / senha123, e verifique se o 
+test@example.com / senha123 e verifique se o 
 dashboard carrega sem erros no console
 ```
 
@@ -544,7 +544,7 @@ Sem MCP:
 
 Com MCP:
 1. Você manda: *"Resolva a issue #412 e avise o time"*
-2. Claude faz tudo em paralelo
+2. O Claude faz tudo em paralelo
 **Total: ~12 minutos**
 
 Fontes: [Claude Code Advanced Patterns — PDF Anthropic](https://resources.anthropic.com/hubfs/Claude%20Code%20Advanced%20Patterns_%20Subagents,%20MCP,%20and%20Scaling%20to%20Real%20Codebases.pdf)
@@ -555,7 +555,7 @@ Fontes: [Claude Code Advanced Patterns — PDF Anthropic](https://resources.anth
 
 ## O problema que subagents resolvem
 
-A janela de contexto tem limite. Numa sessão longa, Claude começa a "esquecer" detalhes do início. E quando o mesmo agente que escreveu o código faz o review, ele tem viés — ele sabe por que fez as escolhas.
+A janela de contexto tem limite. Em uma sessão longa, o Claude começa a "esquecer" detalhes do início. E, quando o mesmo agente que escreveu o código faz o review, ele tem viés — sabe por que fez cada escolha.
 
 Subagents resolvem os dois problemas: **distribuem o trabalho** e **isolam o contexto**.
 
@@ -616,7 +616,7 @@ Hooks são scripts shell que executam automaticamente em resposta a eventos do C
 
 ![Fluxo de Execução dos Hooks](https://raw.githubusercontent.com/biamonsanto/medium/main/images/05-hooks-flow.svg)
 
-Observe o fluxo: Claude quer agir → seu hook verifica → se retornar `exit 1`, a ação é **bloqueada**. Se retornar `exit 0`, prossegue → hook pós-ação executa.
+Observe o fluxo: o Claude quer agir → seu hook verifica → se retornar `exit 1`, a ação é **bloqueada**; se retornar `exit 0`, ela prossegue → o hook pós-ação executa.
 
 ## Configurando hooks no settings.json
 
@@ -679,7 +679,7 @@ if [[ "$FILE" =~ \.(ts|tsx|js|jsx)$ ]]; then
 fi
 ```
 
-Todo arquivo editado por Claude passa pelo lint automaticamente. Zero violations acumuladas.
+Todo arquivo editado pelo Claude passa pelo lint automaticamente. Zero violações acumuladas.
 
 ### 3. Testes obrigatórios antes de encerrar (Stop)
 
@@ -695,7 +695,7 @@ fi
 echo "✓ Testes passando."
 ```
 
-Claude não pode encerrar uma sessão com testes quebrados. Ponto.
+O Claude não pode encerrar uma sessão com testes quebrados. Ponto.
 
 ### 4. Detecção de secrets (PreToolUse em Write)
 
@@ -1031,9 +1031,9 @@ A qualidade das respostas cai com sessões longas. Use `/compact` a cada 30-40 t
 
 ## Erro 3: Não ler o que Claude escreve
 
-Claude pode gerar código que você não entende. Isso é perigoso. Sempre peça:
+O Claude pode gerar código que você não entende. Isso é perigoso. Sempre peça:
 ```
-"Gere o código E explique cada decisão não-óbvia"
+"Gere o código E explique cada decisão não óbvia"
 ```
 
 ## Erro 4: MCPs com permissões amplas demais
@@ -1070,9 +1070,9 @@ Uma Routine que executa sem que ninguém saiba se funcionou é inútil. Configur
 
 A diferença entre um dev no Nível 1 e no Nível 10 não é que um é "melhor programador". É que um opera em uma realidade diferente.
 
-No Nível 1, Claude é um assistente. No Nível 10, Claude é um sistema que trabalha em paralelo com você — e às vezes enquanto você dorme.
+No Nível 1, o Claude é um assistente. No Nível 10, o Claude é um sistema que trabalha em paralelo com você — e, às vezes, enquanto você dorme.
 
-Os dados confirmam: os que chegam ao topo economizam 5-8 horas por semana, mantêm codebases que seriam impossíveis de administrar manualmente, e produzem com consistência que revisões manuais não conseguem garantir.
+Os dados confirmam: os que chegam ao topo economizam de 5 a 8 horas por semana, mantêm codebases que seriam impossíveis de administrar manualmente e produzem com uma consistência que revisões manuais não conseguem garantir.
 
 Mas isso exige investimento real. Não de horas de uso passivo. De aprendizado deliberado, nível por nível.
 
