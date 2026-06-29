@@ -4,15 +4,15 @@
   <text x="60" y="84" fill="#73726C" font-family="Arial, sans-serif" font-size="14">O protocolo que transforma o Claude em um orquestrador dos seus sistemas</text>
   <line x1="60" y1="100" x2="800" y2="100" stroke="#DAD6C9" stroke-width="1"/>
 
-  <!-- connectors curvos (atrás dos cards e da caixa): saem na horizontal do card e entram na horizontal da caixa -->
-  <!-- esquerda: borda do card (205) -> borda da caixa (340) -->
-  <path d="M 205 161 C 272 161 273 207 340 207" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
-  <path d="M 205 239 C 272 239 273 238 340 238" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
-  <path d="M 205 317 C 272 317 273 269 340 269" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
-  <!-- direita: borda da caixa (520) -> borda do card (655) -->
-  <path d="M 520 207 C 588 207 583 161 655 161" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
-  <path d="M 520 238 C 588 238 587 239 655 239" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
-  <path d="M 520 269 C 588 269 583 317 655 317" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <!-- connectors curvos (atrás dos cards e da caixa) -->
+  <!-- esquerda: borda do card (235) -> borda da caixa (340) -->
+  <path d="M 235 161 C 290 161 285 207 340 207" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 235 239 C 290 239 285 238 340 238" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 235 317 C 290 317 285 269 340 269" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <!-- direita: borda da caixa (520) -> borda do card (620) -->
+  <path d="M 520 207 C 575 207 565 161 620 161" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 520 238 C 575 238 565 239 620 239" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <path d="M 520 269 C 575 269 565 317 620 317" fill="none" stroke="#C9A98E" stroke-width="1.6" stroke-dasharray="6,4"/>
 
   <!-- Center: Claude -->
   <rect x="340" y="190" width="180" height="96" rx="16" fill="#CC785C"/>
@@ -21,40 +21,40 @@
   <text x="430" y="274" text-anchor="middle" fill="#F3DCCF" font-family="Arial, sans-serif" font-size="11.5">Terminal · IDE</text>
 
   <!-- GitHub -->
-  <rect x="55" y="130" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="80" y="158" font-size="20">🐙</text>
-  <text x="112" y="156" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">GitHub MCP</text>
-  <text x="112" y="174" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">PRs · Issues · Commits</text>
+  <rect x="55" y="130" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="78" y="158" font-size="20">🐙</text>
+  <text x="110" y="156" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">GitHub MCP</text>
+  <text x="78" y="178" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">PRs · Issues · Commits</text>
 
   <!-- Database -->
-  <rect x="55" y="208" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="80" y="236" font-size="20">🗄️</text>
-  <text x="112" y="234" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Database MCP</text>
-  <text x="112" y="252" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">PostgreSQL · MySQL</text>
+  <rect x="55" y="208" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="78" y="236" font-size="20">🗄️</text>
+  <text x="110" y="234" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Database MCP</text>
+  <text x="78" y="256" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">PostgreSQL · MySQL</text>
 
   <!-- Slack -->
-  <rect x="55" y="286" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="80" y="314" font-size="20">💬</text>
-  <text x="112" y="312" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Slack MCP</text>
-  <text x="112" y="330" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Canais · Alertas</text>
+  <rect x="55" y="286" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="78" y="314" font-size="20">💬</text>
+  <text x="110" y="312" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Slack MCP</text>
+  <text x="78" y="334" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Canais · Alertas</text>
 
   <!-- Browser -->
-  <rect x="655" y="130" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="680" y="158" font-size="20">🌐</text>
-  <text x="712" y="156" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Browser MCP</text>
-  <text x="712" y="174" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Playwright</text>
+  <rect x="620" y="130" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="643" y="158" font-size="20">🌐</text>
+  <text x="675" y="156" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Browser MCP</text>
+  <text x="643" y="178" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Playwright</text>
 
   <!-- Linear -->
-  <rect x="655" y="208" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="680" y="236" font-size="20">📋</text>
-  <text x="712" y="234" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Linear MCP</text>
-  <text x="712" y="252" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Tickets · Sprints</text>
+  <rect x="620" y="208" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="643" y="236" font-size="20">📋</text>
+  <text x="675" y="234" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">Linear MCP</text>
+  <text x="643" y="256" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Tickets · Sprints</text>
 
   <!-- Custom -->
-  <rect x="655" y="286" width="150" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="680" y="314" font-size="20">⚙️</text>
-  <text x="712" y="312" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">MCP custom</text>
-  <text x="712" y="330" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Sistema interno</text>
+  <rect x="620" y="286" width="180" height="62" rx="10" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="643" y="314" font-size="20">⚙️</text>
+  <text x="675" y="312" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">MCP custom</text>
+  <text x="643" y="334" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Sistema interno</text>
 
   <!-- Workflow strip -->
   <rect x="60" y="378" width="740" height="106" rx="14" fill="#2B2A27"/>
