@@ -15,7 +15,7 @@ São 10 níveis. Cada um multiplica o anterior.
 
 ---
 
-![Os 10 Níveis de Domínio do Claude Code](https://raw.githubusercontent.com/biamonsanto/medium/main/images/01-10-levels.svg)
+![Os 10 Níveis de Domínio do Claude Code](https://raw.githubusercontent.com/biamonsanto/medium/main/images/01-10-levels.png)
 
 *Onde você está nessa escala agora? Ao final deste artigo, você vai saber onde quer chegar.*
 
@@ -52,7 +52,7 @@ Pronto. Você está dentro. Mas o que acontece agora?
 
 Quando você manda uma mensagem, o Claude não apenas "responde". Ele entra em um loop agêntico:
 
-![O Loop Agêntico do Claude Code](https://raw.githubusercontent.com/biamonsanto/medium/main/images/02-agentic-loop.svg)
+![O Loop Agêntico do Claude Code](https://raw.githubusercontent.com/biamonsanto/medium/main/images/02-agentic-loop.png)
 
 Observe o diagrama. O Claude **pensa → age → observa → decide se terminou → repete**. Ele pode ler 20 arquivos, rodar 5 comandos e editar 3 funções antes de dar a você uma resposta final. Tudo isso automaticamente.
 
@@ -107,7 +107,7 @@ A solução é o **CLAUDE.md**.
 
 ## Os 4 níveis de memória
 
-![Hierarquia de Memória do CLAUDE.md](https://raw.githubusercontent.com/biamonsanto/medium/main/images/03-claude-md-hierarchy.svg)
+![Hierarquia de Memória do CLAUDE.md](https://raw.githubusercontent.com/biamonsanto/medium/main/images/03-claude-md-hierarchy.png)
 
 São 4 locais, cada um com escopo diferente. Do mais amplo ao mais específico:
 
@@ -462,7 +462,7 @@ MCP (Model Context Protocol) é o protocolo aberto que permite que o Claude se c
 Sem MCP: o Claude vive dentro do terminal, isolado do mundo.
 Com MCP: o Claude é um orquestrador que controla seus sistemas.
 
-![Arquitetura MCP — Claude Conectado ao Mundo](https://raw.githubusercontent.com/biamonsanto/medium/main/images/04-mcp-architecture.svg)
+![Arquitetura MCP — Claude Conectado ao Mundo](https://raw.githubusercontent.com/biamonsanto/medium/main/images/04-mcp-architecture.png)
 
 ## Configurando seus primeiros MCPs
 
@@ -559,7 +559,7 @@ A janela de contexto tem limite. Em uma sessão longa, o Claude começa a "esque
 
 Subagents resolvem os dois problemas: **distribuem o trabalho** e **isolam o contexto**.
 
-![Padrão de Subagents em Paralelo](https://raw.githubusercontent.com/biamonsanto/medium/main/images/06-subagents-pattern.svg)
+![Padrão de Subagents em Paralelo](https://raw.githubusercontent.com/biamonsanto/medium/main/images/06-subagents-pattern.png)
 
 ## Como funciona na prática
 
@@ -614,7 +614,7 @@ A regra prática: comece com um agente. Adicione subagents só quando sentir a n
 
 Hooks são scripts shell que executam automaticamente em resposta a eventos do Claude Code. São o middleware do seu workflow.
 
-![Fluxo de Execução dos Hooks](https://raw.githubusercontent.com/biamonsanto/medium/main/images/05-hooks-flow.svg)
+![Fluxo de Execução dos Hooks](https://raw.githubusercontent.com/biamonsanto/medium/main/images/05-hooks-flow.png)
 
 Observe o fluxo: o Claude quer agir → seu hook verifica → se retornar `exit 1`, a ação é **bloqueada**; se retornar `exit 0`, ela prossegue → o hook pós-ação executa.
 
@@ -872,7 +872,7 @@ echo "✅ Commit aprovado pelo Claude"
 
 Routines são a forma mais avançada. Automações cloud-hosted, com schedule, que executam **sem você estar presente** — sem terminal aberto, sem computador ligado.
 
-![Routines — Automação 24/7](https://raw.githubusercontent.com/biamonsanto/medium/main/images/07-routines-scheduler.svg)
+![Routines — Automação 24/7](https://raw.githubusercontent.com/biamonsanto/medium/main/images/07-routines-scheduler.png)
 
 Uma Routine é configurada uma vez e depois trabalha sozinha. No schedule. Na nuvem. Com os resultados esperando quando você acordar.
 
