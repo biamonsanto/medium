@@ -1,79 +1,77 @@
-<svg viewBox="0 0 860 500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="500" fill="#F0EEE6"/>
+<svg viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="520" fill="#F0EEE6"/>
   <text x="60" y="58" fill="#1F1E1D" font-family="Georgia, serif" font-size="27">Routines — o Claude que trabalha enquanto você dorme</text>
   <text x="60" y="84" fill="#73726C" font-family="Arial, sans-serif" font-size="14">Automações na nuvem que executam no horário marcado, sem o seu computador ligado</text>
   <line x1="60" y1="100" x2="800" y2="100" stroke="#DAD6C9" stroke-width="1"/>
 
-  <!-- Timeline -->
-  <line x1="80" y1="180" x2="800" y2="180" stroke="#D2CCBD" stroke-width="2"/>
-  <text x="90" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">00:00</text>
-  <text x="215" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">06:00</text>
-  <text x="340" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">09:00</text>
-  <text x="465" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">12:00</text>
-  <text x="590" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">18:00</text>
-  <text x="760" y="204" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">23:59</text>
+  <!-- Row of 4 routine cards, evenly spaced -->
+  <!-- Card 1: Security audit -->
+  <rect x="60" y="120" width="170" height="84" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="60" y="120" width="5" height="84" rx="2.5" fill="#CC785C"/>
+  <text x="82" y="154" font-size="19">🔒</text>
+  <text x="110" y="151" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">Security audit</text>
+  <text x="82" y="178" fill="#73726C" font-family="Arial, sans-serif" font-size="11.5">Todo dia · 06:00</text>
+  <text x="82" y="195" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Varredura de segurança</text>
 
-  <!-- routine 1 -->
-  <line x1="225" y1="124" x2="225" y2="176" stroke="#CC785C" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <rect x="145" y="116" width="160" height="50" rx="10" fill="#FAF9F5" stroke="#CC785C" stroke-width="1.3"/>
-  <text x="225" y="138" text-anchor="middle" fill="#CC785C" font-family="Arial, sans-serif" font-size="12" font-weight="700">🔒 Security audit</text>
-  <text x="225" y="156" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="10.5">Todo dia · 06:00</text>
+  <!-- Card 2: Dep update -->
+  <rect x="250" y="120" width="170" height="84" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="250" y="120" width="5" height="84" rx="2.5" fill="#AB5A38"/>
+  <text x="272" y="154" font-size="19">📦</text>
+  <text x="300" y="151" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">Dep update</text>
+  <text x="272" y="178" fill="#73726C" font-family="Arial, sans-serif" font-size="11.5">Toda segunda · 09:00</text>
+  <text x="272" y="195" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Atualiza dependências</text>
 
-  <!-- routine 2 -->
-  <line x1="350" y1="124" x2="350" y2="176" stroke="#AB5A38" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <rect x="285" y="116" width="160" height="50" rx="10" fill="#FAF9F5" stroke="#AB5A38" stroke-width="1.3"/>
-  <text x="365" y="138" text-anchor="middle" fill="#AB5A38" font-family="Arial, sans-serif" font-size="12" font-weight="700">📦 Dep update</text>
-  <text x="365" y="156" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="10.5">Toda segunda · 09:00</text>
+  <!-- Card 3: PR monitor -->
+  <rect x="440" y="120" width="170" height="84" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="440" y="120" width="5" height="84" rx="2.5" fill="#788C5D"/>
+  <text x="462" y="154" font-size="19">👁️</text>
+  <text x="490" y="151" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">PR monitor</text>
+  <text x="462" y="178" fill="#73726C" font-family="Arial, sans-serif" font-size="11.5">A cada novo PR</text>
+  <text x="462" y="195" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Code review automático</text>
 
-  <!-- routine 3 -->
-  <line x1="475" y1="124" x2="475" y2="176" stroke="#788C5D" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <rect x="410" y="116" width="160" height="50" rx="10" fill="#FAF9F5" stroke="#788C5D" stroke-width="1.3"/>
-  <text x="490" y="138" text-anchor="middle" fill="#5E7345" font-family="Arial, sans-serif" font-size="12" font-weight="700">👁️ PR monitor</text>
-  <text x="490" y="156" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="10.5">A cada novo PR</text>
+  <!-- Card 4: Health report -->
+  <rect x="630" y="120" width="170" height="84" rx="12" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <rect x="630" y="120" width="5" height="84" rx="2.5" fill="#B98E5E"/>
+  <text x="652" y="154" font-size="19">📊</text>
+  <text x="680" y="151" fill="#1F1E1D" font-family="Arial, sans-serif" font-size="13" font-weight="700">Health report</text>
+  <text x="652" y="178" fill="#73726C" font-family="Arial, sans-serif" font-size="11.5">Dias 1 e 15 · 10:00</text>
+  <text x="652" y="195" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Saúde do código</text>
 
-  <!-- routine 4 -->
-  <line x1="600" y1="124" x2="600" y2="176" stroke="#B98E5E" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <rect x="535" y="116" width="160" height="50" rx="10" fill="#FAF9F5" stroke="#B98E5E" stroke-width="1.3"/>
-  <text x="615" y="138" text-anchor="middle" fill="#8C6638" font-family="Arial, sans-serif" font-size="12" font-weight="700">📊 Health report</text>
-  <text x="615" y="156" text-anchor="middle" fill="#3D3C39" font-family="Arial, sans-serif" font-size="10.5">Dias 1 e 15 · 10:00</text>
+  <!-- Sleeping bar -->
+  <rect x="60" y="216" width="740" height="32" rx="9" fill="#EDE7DB"/>
+  <text x="430" y="237" text-anchor="middle" fill="#6B5B45" font-family="Arial, sans-serif" font-size="12.5">😴  Enquanto você dorme, o Claude trabalha — sem o seu computador ligado</text>
 
-  <!-- sleeping -->
-  <rect x="640" y="112" width="160" height="56" rx="10" fill="#EDE7DB"/>
-  <text x="665" y="146" font-size="22">😴</text>
-  <text x="700" y="138" fill="#3D3C39" font-family="Arial, sans-serif" font-size="12">Você dormindo,</text>
-  <text x="700" y="156" fill="#8C8A82" font-family="Arial, sans-serif" font-size="11">Claude trabalhando</text>
+  <!-- How to configure -->
+  <rect x="60" y="264" width="740" height="156" rx="14" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
+  <text x="84" y="294" fill="#1F1E1D" font-family="Georgia, serif" font-size="16">Como configurar uma routine</text>
 
-  <!-- How it works -->
-  <rect x="60" y="232" width="740" height="150" rx="14" fill="#FAF9F5" stroke="#E3DECF" stroke-width="1"/>
-  <text x="84" y="260" fill="#1F1E1D" font-family="Georgia, serif" font-size="16">Como configurar uma routine</text>
+  <rect x="84" y="310" width="210" height="92" rx="10" fill="#F0EEE6"/>
+  <text x="104" y="336" fill="#CC785C" font-family="Arial, sans-serif" font-size="12" font-weight="700">1 · Configure</text>
+  <text x="104" y="358" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Prompt + horário +</text>
+  <text x="104" y="375" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">permissões mínimas.</text>
+  <text x="104" y="392" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Uma vez só.</text>
 
-  <rect x="84" y="276" width="210" height="86" rx="10" fill="#F0EEE6"/>
-  <text x="104" y="302" fill="#CC785C" font-family="Arial, sans-serif" font-size="12" font-weight="700">1 · Configure</text>
-  <text x="104" y="324" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Prompt + horário +</text>
-  <text x="104" y="341" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">permissões mínimas.</text>
-  <text x="104" y="356" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Uma vez só.</text>
+  <line x1="298" y1="356" x2="326" y2="356" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#rm)"/>
 
-  <line x1="296" y1="319" x2="328" y2="319" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#rm)"/>
+  <rect x="330" y="310" width="210" height="92" rx="10" fill="#F0EEE6"/>
+  <text x="350" y="336" fill="#AB5A38" font-family="Arial, sans-serif" font-size="12" font-weight="700">2 · A nuvem executa</text>
+  <text x="350" y="358" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Roda no horário, sem</text>
+  <text x="350" y="375" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">o seu PC ligado.</text>
+  <text x="350" y="392" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Automático.</text>
 
-  <rect x="330" y="276" width="210" height="86" rx="10" fill="#F0EEE6"/>
-  <text x="350" y="302" fill="#AB5A38" font-family="Arial, sans-serif" font-size="12" font-weight="700">2 · A nuvem executa</text>
-  <text x="350" y="324" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Roda no horário, sem o</text>
-  <text x="350" y="341" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">seu PC ligado.</text>
-  <text x="350" y="356" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Automático.</text>
+  <line x1="544" y1="356" x2="572" y2="356" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#rm)"/>
 
-  <line x1="542" y1="319" x2="574" y2="319" stroke="#C9A98E" stroke-width="1.5" marker-end="url(#rm)"/>
+  <rect x="576" y="310" width="210" height="92" rx="10" fill="#F0EEE6"/>
+  <text x="596" y="336" fill="#5E7345" font-family="Arial, sans-serif" font-size="12" font-weight="700">3 · Veja o resultado</text>
+  <text x="596" y="358" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">PR aberto, issue criada,</text>
+  <text x="596" y="375" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Slack notificado.</text>
+  <text x="596" y="392" fill="#9C9A92" font-family="Arial, sans-serif" font-size="10.5">Ao acordar.</text>
 
-  <rect x="576" y="276" width="200" height="86" rx="10" fill="#F0EEE6"/>
-  <text x="596" y="302" fill="#5E7345" font-family="Arial, sans-serif" font-size="12" font-weight="700">3 · Veja o resultado</text>
-  <text x="596" y="324" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">PR aberto, issue criada,</text>
-  <text x="596" y="341" fill="#3D3C39" font-family="Arial, sans-serif" font-size="11.5">Slack notificado.</text>
-  <text x="596" y="356" fill="#8C8A82" font-family="Arial, sans-serif" font-size="10.5">Ao acordar.</text>
-
-  <!-- Warning -->
-  <rect x="60" y="396" width="740" height="74" rx="14" fill="#2B2A27"/>
-  <text x="430" y="424" text-anchor="middle" fill="#E0996F" font-family="Georgia, serif" font-size="15">A regra de ouro das routines</text>
-  <text x="430" y="446" text-anchor="middle" fill="#D9D6CC" font-family="Arial, sans-serif" font-size="12">Permissões mínimas. Nunca dê acesso de escrita em produção.</text>
-  <text x="430" y="463" text-anchor="middle" fill="#D9D6CC" font-family="Arial, sans-serif" font-size="12">Nunca merge automático. A routine sugere → o humano decide.</text>
+  <!-- Golden rule -->
+  <rect x="60" y="436" width="740" height="76" rx="14" fill="#2B2A27"/>
+  <text x="430" y="464" text-anchor="middle" fill="#E0996F" font-family="Georgia, serif" font-size="15">A regra de ouro das routines</text>
+  <text x="430" y="486" text-anchor="middle" fill="#D9D6CC" font-family="Arial, sans-serif" font-size="12">Permissões mínimas. Nunca dê acesso de escrita em produção.</text>
+  <text x="430" y="503" text-anchor="middle" fill="#D9D6CC" font-family="Arial, sans-serif" font-size="12">Nunca merge automático. A routine sugere → o humano decide.</text>
 
   <defs>
     <marker id="rm" markerWidth="9" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#C9A98E"/></marker>
